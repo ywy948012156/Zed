@@ -1,0 +1,111 @@
+/* header.wxss */
+#header{
+	width: 100%;
+	height: 268rpx;
+	background-color: rgba(7,17,27,0.5);
+	position: relative;
+}
+
+#header image{
+	width: 128rpx;
+	height: 128rpx;
+	margin-right: 32rpx;
+	margin-left: 48rpx;
+	border-radius: 4rpx;
+}
+
+#header .h-box{
+	float: left;
+	margin-top: 48rpx;
+	color: rgb(255,255,255);
+	display: inline-block;
+}
+
+#header .h-num{
+	margin-top: 80rpx;
+	height: 24rpx;
+	font-size: 20rpx;
+	font-weight: 200;
+	line-height: 24rpx;
+	background-color: rgba(0,0,0,0.2);
+	padding: 14rpx 16rpx;
+	border-radius: 50rpx;
+	margin-right: 24rpx;
+}
+
+#header .h-brand{
+	display: inline-block;
+	background-color: red;
+	font-size: 24rpx;
+	font-weight: 600;
+	height: 36rpx;
+	line-height: 36rpx;
+	width: 72rpx;
+	text-align: center;
+	margin-right: 12rpx;
+}
+
+#header .h-name{
+	display: inline-block;
+	height: 36rpx;
+	font-size: 32rpx;
+	font-weight: bold;
+	line-height: 36rpx;
+}
+
+#header .h-title{
+	height: 24rpx;
+	font-size: 24rpx;
+	font-weight: 200;
+	line-height: 24rpx;
+	margin: 16rpx 0 20rpx 0;
+}
+
+#header .h-discount{
+	height: 24rpx;
+	font-size: 20rpx;
+	font-weight: 200;
+	line-height: 24rpx;
+}
+
+#header .jian{
+	display: inline-block;
+	width: 25rpx;
+	height: 25rpx;
+	font-size: 20rpx;
+	font-weight: 700;
+	line-height: 24rpx;
+	text-align: center;
+	color: red;
+	background-color: rgb(255,255,255);
+	margin-right: 8rpx;
+}
+
+#header .h-notice{
+	box-sizing: border-box;
+	display: flex;
+	width: 100%;
+	height: 56rpx;
+	line-height: 56rpx;
+	color: rgb(255,255,255);
+	font-weight: 200;
+	font-size: 20rpx;
+	background-color: rgba(7,17,27,0.2);
+	justify-content: space-between;
+	padding: 0 24rpx;
+	position:absolute;
+	bottom: 0;
+}
+
+#header .h-notice-bq{
+	box-sizing: border-box;
+	width: 48rpx;
+	height: 28rpx;
+	line-height: 28rpx;
+	text-align: center;
+	font-weight: 700;
+	color: black;
+	background-color: white;
+	margin-top: 14rpx;
+	border-radius: 5rpx;
+}

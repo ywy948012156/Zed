@@ -1,1 +1,2 @@
-
+/* Commodity.wxss */
+@import "../header/index.wxss";

@@ -1,0 +1,25 @@
+<!--header.wxml-->
+<template name="header">
+	<view id="header">
+		<view class="h-box"><image src="../../img/header_log.jpg" /></view>
+		<view class="h-box">
+			<view>
+				<view class="h-brand">品牌</view>
+				<text class="h-name">粥品香坊（大运村）</text>
+			</view>
+			<view><text class="h-title">蜂鸟专送/38分钟送达</text></view>
+			<view>
+				<view class="jian">减</view>
+				<text class="h-discount">在线支付满28减5，满50减10</text>
+			</view>
+		</view>
+		<view class="h-box" style="float: right;">
+			<view class="h-num">5个 ></view>
+		</view>
+		<view class="h-notice">
+			<view class="h-notice-bq">公告</view>
+			<view class="h-notice-text">粥品香坊其烹饪粥料的秘方源于中国前年古法，再融合现代制作工艺...</view>
+			<view class="h-notice-text">></view>
+		</view>
+	</view>
+</template>
