@@ -1,4 +1,5 @@
-//app.js
+﻿//app.js
+// yhy
 App({
   onLaunch: function () {
     // 展示本地存储能力
