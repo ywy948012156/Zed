@@ -1,0 +1,4 @@
+//Commodity.js
+Page({
+  data: {}
+})
