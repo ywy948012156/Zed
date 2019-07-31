@@ -1,6 +1,6 @@
 {
   "pages": [
-    "pages/Commodity/index",
+    "pages/Home/index",
     "pages/Details/index",
     "pages/index/index",
     "pages/logs/logs"

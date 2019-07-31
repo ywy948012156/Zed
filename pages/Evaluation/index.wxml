@@ -1,4 +1,6 @@
 <!--Evaluation.wxml-->
-<view id="Evaluation">
-	Evaluation
-</view>
+<template name="Evaluation">
+	<view id="Evaluation">
+		Evaluation
+	</view>
+</template>

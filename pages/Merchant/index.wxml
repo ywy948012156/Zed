@@ -1,4 +1,6 @@
 <!--Merchant.wxml-->
-<view id="Merchant">
-	Merchant
-</view>
+<template name="Merchant">
+	<view id="Merchant">
+		Merchant
+	</view>
+</template>

@@ -1,8 +1,6 @@
 <!--Commodity.wxml-->
-<import src="../header/index" />
-<view id="Commodity">
-	<template is="header" />
-	<navigator url="/pages/Commodity/index">跳转到商品</navigator>
-	<navigator url="/pages/index/index">跳转到评价</navigator>
-	<navigator url="/pages/logs/logs">跳转到商家</navigator>
-</view>
+<template name="Commodity">
+	<view id="Commodity">
+		Commodity
+	</view>
+</template>

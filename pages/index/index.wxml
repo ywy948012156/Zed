@@ -10,7 +10,4 @@
   <view class="usermotto">
     <text class="user-motto">{{motto}}</text>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">阿斯顿发撒都发顺丰</text>
-  </view>
 </view>

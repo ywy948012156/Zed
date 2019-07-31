@@ -1,0 +1,24 @@
+<!--Home.wxml-->
+<import src="../header/index" />
+<import src="../Commodity/index" />
+<import src="../Evaluation/index" />
+<import src="../Merchant/index" />
+<view id="Home">
+	<template is="header" />
+	<view class="nav">
+		<view class="tab-item {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">商品</view>
+		<view class="tab-item {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">评价</view>
+		<view class="tab-item {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="swichNav">商家</view>
+	</view>
+	<swiper class="swiper" current="{{currentTab}}" duration="200" bindchange="swiperChange">
+		<swiper-item>
+			<template is="Commodity" />
+		</swiper-item>
+		<swiper-item>
+			<template is="Evaluation" />
+		</swiper-item>
+		<swiper-item>
+			<template is="Merchant" />
+		</swiper-item>
+	</swiper>
+</view>
