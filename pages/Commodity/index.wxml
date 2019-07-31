@@ -1,6 +1,6 @@
 <!--Commodity.wxml-->
 <template name="Commodity">
 	<view id="Commodity">
-		Commodity
+		开始
 	</view>
 </template>
