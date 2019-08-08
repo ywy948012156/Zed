@@ -1,0 +1,53 @@
+<!--Commodity.wxml-->
+<template name="Commodity">
+	<view id="Commodity">
+		<view class="menu-wrapper">
+			<scroll-view scroll-y="true">
+				<view wx:for="{{goods}}" class="menu-item" bindtap="selectMenu" data-item-index="{{index}}">
+					<view class="text">
+						{{item.name}}
+					</view>
+				</view>
+			</scroll-view>
+		</view>
+		
+		<scroll-view scroll-y="true" scroll-into-view="{{toView}}" class="foods-wrapper">
+			<view wx:for="{{goods}}" class="food-list food-list-hook" wx:for-index="parentIndex">
+				<view id="order{{parentIndex}}" class="title">{{item.name}}</view>
+				<view wx:for="{{item.foods}}" class="food-item" wx:for-item="food" data-food="{{food}}">
+					<view class="icon">
+						<image src="{{food.icon}}" style="width: 120rpx;height: 120rpx;border-radius: 4rpx;" />
+					</view>
+					<view class="content">
+						<view class="name">{{food.name}}</view>
+						<view class="desc">{{food.description}}</view>
+						<view class="extra">
+							<text class="count">月售{{food.sellCount}}</text>
+							<text class="count">好评{{food.rating}}</text>
+						</view>
+						<view class="price">
+							<view class="now">￥{{food.price}}</view>
+							<view class="old" wx:if="{{food.oldPrice}}">￥{{food.oldPrice}}</view>
+						</view>
+
+						<!--cartControl-->
+						<view class="cartControl-wrapper">
+							<view class="cartControl">
+								<view name="fade">
+									<view class="cart-decrease" wx:if="{{food.sellCount > 0}}" data-item-index="{{index}}" data-parentIndex="{{parentIndex}}"
+									 catchtap="decreaseCart">
+										<view class="inner" style="font-size:24px;color:#00A0DC;">-</view>
+									</view>
+									<!-- <view class="cart-count" wx:if="{{food.sellCount > 0 }}">{{food.sellCount}}</view> -->
+									<view class="cart-add " style="color:#00A0DC; " data-item-index="{{index}}"
+									 data-parentIndex="{{parentIndex}}" catchtap="addCart">+</view>
+								</view>
+							</view>
+						</view>
+						
+					</view>
+				</view>
+			</view>
+		</scroll-view>
+	</view>
+</template>

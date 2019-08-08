@@ -1,14 +1,16 @@
 {
-  "pages": [
-    "pages/Home/index",
-    "pages/Details/index",
-    "pages/logs/logs"
-  ],
-  "window": {
-    "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "墨渊",
-    "navigationBarTextStyle": "black"
-  },
-  "sitemapLocation": "sitemap.json"
+	"pages": [
+		"pages/Home/index",
+		"pages/Details/index",
+		
+		"pages/goods/goods",
+		"pages/goods/pay/pay"
+	],
+	"window": {
+		"backgroundTextStyle": "light",
+		"navigationBarBackgroundColor": "#fff",
+		"navigationBarTitleText": "墨渊",
+		"navigationBarTextStyle": "black"
+	},
+	"sitemapLocation": "sitemap.json"
 }

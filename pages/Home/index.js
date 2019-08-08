@@ -1,28 +1,51 @@
 // Home.js
+import {
+	GoodsModel
+} from '../../models/goods.js'
+const goodsModel = new GoodsModel()
 Page({
 	data: {
-		// tab切换  
-		currentTab: 0,
+		// tab切换
+		currentTab: 'Commodity',
+		// 商品数据
+		goods:[],
+		// 底部所需数据
+		footer: {
+			toView: '0',
+			scrollTop: 100,
+			foodCounts: 0,
+			totalPrice: 0, // 总价格
+			totalCount: 0, // 总商品数
+			carArray: [],
+			minPrice: 20, //起送價格
+			payDesc: '',
+			deliveryPrice: 4, //配送費
+			fold: true,
+			selectFoods: [{
+				price: 20,
+				count: 2
+			}],
+			cartShow: 'none',
+		}
 	},
-	swichNav: function(e) {
-		console.log(e);
-		var that = this;
+	tabNav: function(e) {
 		if (this.data.currentTab === e.target.dataset.current) {
 			return false;
 		} else {
-			that.setData({
+			this.setData({
 				currentTab: e.target.dataset.current,
 			})
 		}
 	},
-	swiperChange: function(e) {
-		console.log(e);
-		this.setData({
-			currentTab: e.detail.current,
-		})
-	},
 	onLoad: function(options) {
 		// 生命周期函数--监听页面加载
+		let that = this;
+		goodsModel.getList().then(res => {
+			that.setData({
+				goods: res.goods
+			})
+			console.log(res.goods)
+		})
 	},
 	onReady: function() {
 		// 生命周期函数--监听页面初次渲染完成

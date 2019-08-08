@@ -1,6 +1,0 @@
-<!--Commodity.wxml-->
-<template name="Commodity">
-	<view id="Commodity">
-		已经更改
-	</view>
-</template>

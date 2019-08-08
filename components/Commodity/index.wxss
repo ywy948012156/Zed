@@ -1,0 +1,192 @@
+/* Commodity.wxss */
+#Commodity {
+	display: flex;
+	width: 100%;
+	overflow: hidden;
+	font-family: "微软雅黑";
+}
+
+#Commodity .menu-wrapper {
+	width: 160rpx;
+	background: #f3f5f7;
+}
+
+#Commodity .menu-wrapper .menu-item {
+	display: table;
+	width: 112rpx;
+	height: 108rpx;
+	line-height: 28rpx;
+	font-weight: 200;
+	padding: 0 24rpx;
+}
+
+#Commodity .menu-wrapper .menu-item .icon {
+	display: inline-block;
+	width: 24rpx;
+	height: 24rpx;
+	vertical-align: top;
+	margin-right: 8rpx;
+	background-size: 24rpx 24rpx;
+	background-repeat: no-repeat;
+}
+
+#Commodity .menu-wrapper .menu-item .text {
+	display: table-cell;
+	width: 112rpx;
+	vertical-align: middle;
+	position: relative;
+	font-size: 24rpx;
+	border-bottom: 1rpx solid rgba(7, 17, 27, 0.1);
+}
+
+#Commodity .foods-wrapper {
+	flex: 1;
+}
+
+#Commodity .foods-wrapper .food-list .title {
+	padding-left: 28rpx;
+	height: 52rpx;
+	line-height: 52rpx;
+	border-left: 1rpx solid rgba(7, 17, 27, 0.1);
+	font-size: 24rpx;
+	color: rgb(147, 153, 159);
+	background: #f3f5f7;
+}
+
+#Commodity .foods-wrapper .food-list .food-item {
+	display: flex;
+	margin: 36rpx;
+	padding-bottom: 36rpx;
+	position: relative;
+	border-bottom: 1rpx solid rgba(7, 17, 27, 0.1);
+}
+
+#Commodity .foods-wrapper .food-list .food-item:last-child {
+	border: none;
+	margin-bottom: 0;
+}
+
+#Commodity .foods-wrapper .food-list .food-item .icon {
+	margin-right: 20rpx;
+}
+
+#Commodity .foods-wrapper .food-list .food-item .content {
+	flex: 1;
+}
+
+#Commodity .foods-wrapper .food-list .food-item .content .name {
+	margin: 4rpx 0 16rpx 0;
+	font-size: 28rpx;
+	line-height: 28rpx;
+	height: 28rpx;
+	color: rgb(7, 17, 27);
+}
+
+#Commodity .foods-wrapper .food-list .food-item .content .desc,
+.extra {
+	font-size: 20rpx;
+	line-height: 20rpx;
+	color: rgb(147, 153, 159);
+}
+
+#Commodity .foods-wrapper .food-list .food-item .content .desc {
+	width: 300rpx;
+	margin-bottom: 16rpx;
+	line-height: 24rpx;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+#Commodity .foods-wrapper .food-list .food-item .content .extra .count {
+	margin-right: 24rpx;
+}
+
+#Commodity .foods-wrapper .food-list .food-item .content .price {
+	font-weight: 700;
+	line-height: 48rpx;
+}
+
+#Commodity .foods-wrapper .food-list .food-item .content .price .now {
+	margin-right: 16rpx;
+	font-size: 28rpx;
+	color: rgb(240, 20, 20);
+}
+
+#Commodity .foods-wrapper .food-list .food-item .content .price .old {
+	font-size: 20rpx;
+	color: rgb(147, 153, 159);
+	text-decoration: line-through;
+}
+
+#Commodity .foods-wrapper .food-list .food-item .content .cartControl-wrapper {
+	position: absolute;
+	right: 0;
+	bottom: 24rpx;
+}
+
+/* cartControl 样式 */
+
+#Commodity .foods-wrapper .food-list .food-item .content .cartControl-wrapper .cartControl {
+	font-size: 0;
+}
+
+#Commodity .foods-wrapper .food-list .food-item .content .cartControl-wrapper .cartControl .cart-decrease,
+.cart-add {
+	display: inline-block;
+	padding: 8rpx 12rpx 12rpx 12rpx;
+}
+
+#Commodity .foods-wrapper .food-list .food-item .content .cartControl-wrapper .cartControl .cart-decrease,
+.cart-add :fade-enter-active,
+:fade-leave-active {
+	transition: all 0.4s linear;
+}
+
+#Commodity .foods-wrapper .food-list .food-item .content .cartControl-wrapper .cartControl .cart-decrease,
+.cart-add :fade-enter,
+:fade-leave-active {
+	opacity: 0 transform translate3d(48rpx, 0, 0);
+}
+
+#Commodity .foods-wrapper .food-list .food-item .content .cartControl-wrapper .cartControl .cart-decrease,
+.cart-add .inner {
+	display: inline-block;
+	line-height: 48rpx;
+	font-size: 48rpx;
+	vertical-align: top;
+	color: rgb(0, 160, 220, 0.2);
+}
+
+#Commodity .foods-wrapper .food-list .food-item .content .cartControl-wrapper .cartControl .cart-decrease,
+.cart-add :inner-enter-active,
+:inner-leave-active {
+	transition: all 0.4s linear;
+	transform: rotate(0);
+}
+
+#Commodity .foods-wrapper .food-list .food-item .content .cartControl-wrapper .cartControl .cart-decrease,
+.cart-add :inner-enter,
+:inner-leave-active {
+	opacity: 0 transform rotate(180deg);
+}
+
+#Commodity .foods-wrapper .food-list .food-item .content .cartControl-wrapper .cartControl .cart-count {
+	display: inline-block;
+	font-size: 20rpx;
+	line-height: 48rpx;
+	width: 28rpx;
+	vertical-align: top;
+	padding-top: 12rpx;
+	text-align: center;
+	color: rgb(147, 153, 159);
+}
+
+#Commodity .foods-wrapper .food-list .food-item .content .cartControl-wrapper .cartControl .cart-add {
+	display: inline-block;
+	padding: 12rpx;
+	line-height: 48rpx;
+	font-size: 48rpx;
+	vertical-align: top;
+	color: rgb(0, 160, 220, 0.2);
+}

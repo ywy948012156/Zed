@@ -1,24 +1,31 @@
 <!--Home.wxml-->
-<import src="../header/index" />
-<import src="../Commodity/index" />
-<import src="../Evaluation/index" />
-<import src="../Merchant/index" />
+<import src="/components/header/index" />
+<import src="/components/footer/index" />
+<import src="/components/Commodity/index" />
+<import src="/components/Evaluation/index" />
+<import src="/components/Merchant/index" />
 <view id="Home">
+	<!-- header -->
 	<template is="header" />
-	<view class="nav">
-		<view class="tab-item {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">商品</view>
-		<view class="tab-item {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">评价</view>
-		<view class="tab-item {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="swichNav">商家</view>
+	<!-- header -->
+
+	<!-- tab -->
+	<view class="tab">
+		<view class="tab-item {{currentTab==='Commodity' ? 'on' : ''}}" data-current="Commodity" bindtap="tabNav">商品</view>
+		<view class="tab-item {{currentTab==='Evaluation' ? 'on' : ''}}" data-current="Evaluation" bindtap="tabNav">评价</view>
+		<view class="tab-item {{currentTab==='Merchant' ? 'on' : ''}}" data-current="Merchant" bindtap="tabNav">商家</view>
 	</view>
-	<swiper class="swiper" current="{{currentTab}}" duration="200" bindchange="swiperChange">
-		<swiper-item>
-			<template is="Commodity" />
-		</swiper-item>
-		<swiper-item>
-			<template is="Evaluation" />
-		</swiper-item>
-		<swiper-item>
-			<template is="Merchant" />
-		</swiper-item>
-	</swiper>
+	<!-- tab -->
+
+	<!-- main -->
+	<view id="main">
+		<template is="Commodity" wx:if="{{currentTab==='Commodity'}}" data="{{goods}}" />
+		<template is="Evaluation" wx:if="{{currentTab==='Evaluation'}}" />
+		<template is="Merchant" wx:if="{{currentTab==='Merchant'}}" />
+	</view>
+	<!-- main -->
+
+	<!-- footer -->
+	<template is="footer" data="{{...footer}}" />
+	<!-- footer -->
 </view>

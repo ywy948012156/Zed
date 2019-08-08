@@ -1,0 +1,204 @@
+/* header.wxss */
+#header {
+	width: 100%;
+	background-color: rgba(7, 17, 27, 0.5);
+}
+
+.h-box {
+	box-sizing: border-box;
+	padding: 48rpx 24rpx 36rpx 48rpx;
+	display: flex;
+}
+
+.h-box-right {
+	width: 128rpx;
+	height: 128rpx;
+	border-radius: 4rpx;
+	overflow: hidden;
+}
+
+.h-box-right>image {
+	width: 100%;
+	height: 100%;
+}
+
+.h-box-left {
+	flex: 1;
+	box-sizing: border-box;
+	margin-left: 32rpx;
+	padding: 4rpx 0rpx;
+}
+
+.h-box-left .h-box-left-top {
+	display: flex
+}
+
+.h-box-left .h-box-left-top>image {
+	width: 60rpx;
+	height: 36rpx;
+	margin-right: 12rpx;
+}
+
+.h-box-left .h-name {
+	display: inline-block;
+	font-size: 32rpx;
+	font-weight: bold;
+	line-height: 36rpx;
+	color: rgb(255, 255, 255)
+}
+
+.h-box-left .h-brand {}
+
+.h-box-left .h-box-left-content {
+	margin-top: 16rpx;
+	font-size: 24rpx;
+	color: rgb(255, 255, 255);
+	font-weight: 200;
+}
+
+.h-box-left .h-box-left-bottom {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 20rpx;
+	font-size: 20rpx;
+	font-weight: 200;
+	line-height: 24rpx;
+	color: rgb(255, 255, 255)
+}
+
+.h-box-left .h-box-left-bottom image {
+	width: 24rpx;
+	height: 24rpx;
+	margin-right: 8rpx;
+}
+
+.h-box-left .h-box-left-bottom view {
+	display: flex
+}
+
+.h-box-num {
+	height: 48rpx;
+	box-sizing: border-box;
+	border-radius: 48rpx;
+	font-size: 20rpx;
+	color: rgb(255, 255, 255, 255);
+	font-weight: 200;
+	line-height: 24rpx;
+	background-color: rgba(0, 0, 0, 0.2);
+	padding: 14rpx 16rpx;
+
+}
+
+.h-box-num text:nth-child(1) {
+	margin-right: 4rpx;
+}
+
+.h-notice {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	height: 56rpx;
+	background-color: rgba(7, 17, 27, 0.2);
+	line-height: 56rpx;
+	padding: 0 24rpx;
+}
+
+.h-notice image {
+	width: 44rpx;
+	height: 24rpx;
+	margin-right: 8rpx;
+}
+
+.h-notice-text {
+	font-size: 20rpx;
+	color: rgb(255, 255, 255);
+	font-weight: 200;
+}
+
+.h-notice-text-last {
+	margin-left: 8rpx
+}
+
+/* #header .h-box{
+	float: left;
+	margin-top: 48rpx;
+	color: rgb(255,255,255);
+	display: inline-block;
+}
+
+#header .h-num{
+	margin-top: 80rpx;
+	height: 24rpx;
+	font-size: 20rpx;
+	font-weight: 200;
+	line-height: 24rpx;
+	background-color: rgba(0,0,0,0.2);
+	padding: 14rpx 16rpx;
+	border-radius: 50rpx;
+	margin-right: 24rpx;
+}
+
+#header 
+
+#header .h-name{
+
+}
+
+#header .h-title{
+	height: 24rpx;
+	font-size: 24rpx;
+	font-weight: 200;
+	line-height: 24rpx;
+	margin: 16rpx 0 20rpx 0;
+}
+
+#header .h-discount{
+	height: 24rpx;
+	font-size: 20rpx;
+	font-weight: 200;
+	line-height: 24rpx;
+}
+
+#header .jian{
+	display: inline-block;
+	width: 25rpx;
+	height: 25rpx;
+	font-size: 20rpx;
+	font-weight: 700;
+	line-height: 24rpx;
+	text-align: center;
+	color: red;
+	background-color: rgb(255,255,255);
+	margin-right: 8rpx;
+}
+
+#header .h-notice{
+	box-sizing: border-box;
+	display: flex;
+	width: 100%;
+	height: 56rpx;
+	line-height: 56rpx;
+	color: rgb(255,255,255);
+	font-weight: 200;
+	font-size: 20rpx;
+	background-color: rgba(7,17,27,0.2);
+	justify-content: space-between;
+	padding: 0 24rpx;
+	position:absolute;
+	bottom: 0;
+  
+}
+
+#header .h-notice-bq{
+	box-sizing: border-box;
+	width: 48rpx;
+	height: 28rpx;
+	line-height: 28rpx;
+	text-align: center;
+	font-weight: 700;
+	color: black;
+	background-color: white;
+	margin-top: 14rpx;
+	border-radius: 5rpx;
+} */
