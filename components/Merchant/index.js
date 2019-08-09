@@ -1,4 +1,0 @@
-//Merchant.js
-Page({
-  data: {}
-})

@@ -1,1 +1,117 @@
+/* Merchant.wxcc */
 
+#Merchant{
+  width:100%;
+}
+
+#Merchant .merchant-yi{
+  width:100%;
+  padding: 36rpx;
+  box-sizing: border-box;
+}
+#Merchant .merchant-yi>view{
+  border-bottom:1px solid #e6e7e8;
+}
+#Merchant .merchant-yi>view:nth-of-type(1){
+  height:150rpx;
+  display: flex;
+  justify-content: space-between;
+}
+#Merchant .merchant-yi>view:nth-of-type(2){
+  height:140rpx;
+  padding-top:36rpx;
+  padding-bottom:36rpx;
+  display: flex;
+}
+#Merchant .merchant-yi>view:nth-of-type(2)>view{
+  width:33.3%;
+}
+#Merchant .merchant-yi>view:nth-of-type(2)>view:nth-of-type(2){
+  border-right:1px solid #e6e7e8;
+  border-left:1px solid #e6e7e8;
+}
+#Merchant .title1{
+  font-size:28rpx;
+  margin-bottom:16rpx;
+}
+#Merchant .star>image{
+  width:36rpx;
+  height:36rpx;
+}
+#Merchant .star>.txt1{
+  margin-left:16rpx;
+  margin-right:24rpx;
+  font-size:20rpx;
+}
+#Merchant .star>.txt2{
+  font-size:20rpx;
+}
+#Merchant .qisongprice{
+  font-size:20rpx;
+  color: #93999f;
+  text-align: center;
+}
+#Merchant .price{
+  text-align: center;
+  margin-top:8rpx;
+}
+#Merchant .price>.txt1{
+  font-size:48rpx;
+}
+#Merchant .price>.txt2{
+  font-size:20rpx;
+}
+/* 灰色横条 */
+#Merchant .grey{
+  height:35rpx;
+  background: #f3f5f7;
+  border-bottom:1px solid #e6e7e8;
+}
+/*公告与活动*/
+#Merchant .gonggao{
+  padding:36rpx 35rpx 0rpx 35rpx;
+}
+#Merchant .gonggao-txt{
+  font-size:30rpx;
+}
+#Merchant .bulletin{
+  color:red;
+  padding:16rpx 24rpx 32rpx 24rpx;
+  box-sizing: border-box;
+}
+#Merchant .manjian-yi{
+  padding: 32rpx 24rpx;
+  box-sizing: border-box;
+  border-top:1px solid #e6e7e8;
+}
+/* 商家实景 */
+#Merchant .shangjia{
+  padding: 36rpx;
+}
+#Merchant .tupian{
+  display: flex;
+  overflow: auto;
+  margin-top:24rpx;
+}
+#Merchant .tupian>view{
+    margin-right: 12rpx;
+}
+#Merchant .shangjia>image{
+  width:240rpx;
+  height:160rpx;
+}
+/* 商家信息 */
+#Merchant .shop-detail{
+  padding: 36rpx;
+}
+#Merchant .shop-detail>text{
+  font-size:30rpx;
+  margin-bottom: 24rpx;
+}
+#Merchant .shop-detail>.detail1{
+  height: 100rpx;
+  border-top:1px solid #e6e7e8;
+  padding:32rpx 24rpx;
+  box-sizing: border-box;
+  font-size:24rpx;
+}

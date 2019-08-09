@@ -1,6 +1,8 @@
 @import "/components/header/index.wxss";
 @import "/components/footer/index.wxss";
 @import "/components/Commodity/index.wxss";
+@import "/components/Merchant/index.wxss";
+@import "/components/Evaluation/index.wxss";
 
 page {
 	width: 100%;

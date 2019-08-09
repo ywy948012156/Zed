@@ -1,4 +1,0 @@
-//Evaluation.js
-Page({
-  data: {}
-})
