@@ -34,11 +34,11 @@
 						<view class="cartControl-wrapper">
 							<view class="cartControl">
 								<view name="fade">
-									<view class="cart-decrease" wx:if="{{food.sellCount > 0}}" data-item-index="{{index}}" data-parentIndex="{{parentIndex}}"
+									<view class="cart-decrease" wx:if="{{food.Count > 0}}" data-item-index="{{index}}" data-parentIndex="{{parentIndex}}"
 									 catchtap="decreaseCart">
 										<view class="inner" style="font-size:24px;color:#00A0DC;">-</view>
 									</view>
-									<!-- <view class="cart-count" wx:if="{{food.sellCount > 0 }}">{{food.sellCount}}</view> -->
+									<!-- <view class="cart-count" wx:if="{{food.Count > 0 }}">{{food.Count}}</view> -->
 									<view class="cart-add " style="color:#00A0DC; " data-item-index="{{index}}"
 									 data-parentIndex="{{parentIndex}}" catchtap="addCart">+</view>
 								</view>

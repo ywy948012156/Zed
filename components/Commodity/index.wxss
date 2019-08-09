@@ -2,12 +2,14 @@
 #Commodity {
 	display: flex;
 	width: 100%;
+	height: 100%;
 	overflow: hidden;
 	font-family: "微软雅黑";
 }
 
 #Commodity .menu-wrapper {
 	width: 160rpx;
+	overflow: auto;
 	background: #f3f5f7;
 }
 
@@ -189,4 +191,10 @@
 	font-size: 48rpx;
 	vertical-align: top;
 	color: rgb(0, 160, 220, 0.2);
+}
+/* 隐藏滚动条 */
+::-webkit-scrollbar{
+	width: 0;
+	height: 0;
+	color: transparent;
 }
