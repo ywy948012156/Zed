@@ -7,25 +7,22 @@
 <view id="Home">
 	<!-- header -->
 	<template is="header" />
-	<!-- header -->
-
+	<!-- header-end -->
 	<!-- tab -->
 	<view class="tab">
 		<view class="tab-item {{currentTab==='Commodity' ? 'on' : ''}}" data-current="Commodity" bindtap="tabNav">商品</view>
 		<view class="tab-item {{currentTab==='Evaluation' ? 'on' : ''}}" data-current="Evaluation" bindtap="tabNav">评价</view>
 		<view class="tab-item {{currentTab==='Merchant' ? 'on' : ''}}" data-current="Merchant" bindtap="tabNav">商家</view>
 	</view>
-	<!-- tab -->
-
+	<!-- tab-end -->
 	<!-- main -->
 	<view id="main">
 		<template is="Commodity" wx:if="{{currentTab==='Commodity'}}" data="{{goods}}" />
 		<template is="Evaluation" wx:if="{{currentTab==='Evaluation'}}" />
 		<template is="Merchant" wx:if="{{currentTab==='Merchant'}}" />
 	</view>
-	<!-- main -->
-
+	<!-- main-end -->
 	<!-- footer -->
 	<template is="footer" data="{{...footer}}" />
-	<!-- footer -->
+	<!-- footer-end -->
 </view>
